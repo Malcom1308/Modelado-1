@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelado #1</title>
+  <link rel="stylesheet" href="./mru.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="./mru.js"></script>
+</head>
+<body>
+  <div id="controls">
+    <h1>Simulación de Movimiento Parabólico</h1>
+    <div class="input-group">
+      <label for="v0">Velocidad inicial (m/s):</label>
+      <input type="number" id="v0" value="25" step="1" min="0" max="100" required>
+      <span id="v0-error" class="error-message"></span>
+    </div>
+    <div class="input-group">
+      <label for="angle">Ángulo de lanzamiento (grados):</label>
+      <input type="number" id="angle" value="45" step="1" min="0" max="90" required>
+      <span id="angle-error" class="error-message"></span>
+    </div>
+    <button onclick="startSimulation()">Iniciar Simulación</button>
+  </div>
+  <div id="simulation"></div>
+</body>
+</html>
